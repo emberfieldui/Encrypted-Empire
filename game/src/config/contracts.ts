@@ -1,5 +1,5 @@
 // EncryptedEmpireGame contract deployed on Sepolia
-export const CONTRACT_ADDRESS = '0x0000000000000000000000000000000000000000' as const;
+export const CONTRACT_ADDRESS = '0xb8702E674C0FE18e0FE12CBAfd4aDF00c6240316' as const;
 
 // ABI copied from deployments/sepolia/EncryptedEmpireGame.json
 export const CONTRACT_ABI = [
