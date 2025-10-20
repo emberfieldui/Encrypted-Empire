@@ -10,7 +10,7 @@ import { vars } from "hardhat/config";
 import "solidity-coverage";
 
 import "./tasks/accounts";
-import "./tasks/FHECounter";
+import "./tasks/EncryptedEmpireGame";
 
 // Run 'npx hardhat vars setup' to see the list of variables that need to be set
 
@@ -38,6 +38,7 @@ const config: HardhatUserConfig = {
         mnemonic: MNEMONIC,
       },
       chainId: 31337,
+      saveDeployments: true,
     },
     anvil: {
       accounts: {
@@ -47,6 +48,7 @@ const config: HardhatUserConfig = {
       },
       chainId: 31337,
       url: "http://localhost:8545",
+      saveDeployments: true,
     },
     sepolia: {
       accounts: {
