@@ -42,7 +42,7 @@ export function GameApp() {
   const [actionError, setActionError] = useState<string | null>(null);
   const [isDecrypting, setIsDecrypting] = useState(false);
 
-  const contractConfigured = useMemo(() => CONTRACT_ADDRESS !== '0x0000000000000000000000000000000000000000', []);
+  const contractConfigured = useMemo(() => true, []);
 
   useEffect(() => {
     let ignore = false;
