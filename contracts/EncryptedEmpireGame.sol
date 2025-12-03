@@ -2,9 +2,9 @@
 pragma solidity ^0.8.24;
 
 import {FHE, ebool, euint32, externalEuint32} from "@fhevm/solidity/lib/FHE.sol";
-import {SepoliaConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
+import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 
-contract EncryptedEmpireGame is SepoliaConfig {
+contract EncryptedEmpireGame is ZamaEthereumConfig {
     uint32 private constant GRID_MIN = 1;
     uint32 private constant GRID_MAX = 10;
 
